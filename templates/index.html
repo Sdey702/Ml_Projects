@@ -22,13 +22,18 @@
     }
 
     .center-image img {
-        width: 100%;
+        width: 60%;
         max-height: 100%;
     }
 
     h1 {
         font-family: "Fantasy", Times, serif;
     }
+
+    .button {
+        text-align: center;
+    }
+
 </style>
 
 <body>
@@ -48,15 +53,16 @@
 
     </div>
     <div class="center-image">
-        <img src="{{url_for('static', filename='images/ML.jpg')}}">
+        <img src="{{url_for('static', filename='images/ML-removebg-preview.png')}}">
     </div>
 
     <br><br>
 
-    <div class="d-grid gap-2 col-2 mx-auto">
-        <a href="/medicale_insurence" class="btn btn-outline-primary">Medicale Insurence</a>
+    <div class = "button">
+        <a href="/medicale_insurence" class="btn btn-outline-primary" role="button" aria-pressed="true">Medicale Insurence</a>
     </div>
 
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
