@@ -12,7 +12,7 @@ def medicale_insurence():
 def predict_charges():
 
     data = request.form
-    print("Data :",data)
+    # print("Data :",data)
     age      = data['age']
     gender   = data['gender']
     bmi      = data['bmi']
@@ -20,7 +20,7 @@ def predict_charges():
     smoker   = data['smoker']
     region   = data['region']
 
-    print('*'*50,age,gender,bmi,children,smoker,region)
+    # print('*'*50,age,gender,bmi,children,smoker,region)
 
     # get predict value from utils class
     obj = Medicale_insurences_util(age,gender,bmi,children,smoker,region)
